@@ -1,0 +1,95 @@
+<!-- As a link -->
+
+<nav class="navbar navbar-light bg-dark " >
+    <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#169; HAFC Bank Pvt.Ltd </b></a>
+    <span class="quote text-light">Giving you freedom...</span>
+  </nav>
+  <h2 style="color:aliceblue;">Welcome {{user}}!!!</h2>
+<a routerLink="/transaction">View Transaction History</a>
+
+  <div class="container col-md-6 mt-0">
+      <div class="d-flex justify-content-center h-100">
+          <div class="card">
+              <div class="card-header">
+                  <h3 class="text-center">Deposit form</h3>
+                  
+              </div>
+              <div class="card-body">
+                <form (ngSubmit)="deposit()">
+            <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input name="acno" [(ngModel)]="acno" type="text" class="form-control" placeholder="Account number" id="login_acno" required>
+                          
+                      </div>
+  
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <input name="pswd" [(ngModel)]="pswd"type="password" class="form-control" placeholder="password" id="login_pswd" required>
+                          
+                      </div>
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-key"></i></span>
+                          </div>
+                          <input name="amount" [(ngModel)]="amount" type="text" class="form-control" placeholder="amount" id="login_amount" required>
+                      </div>
+                      
+                      <div class="form-group">
+                          <input type="submit" value="deposit" class="btn float-right login_btn " style="width:50%" >
+                      </div>
+                  </form>
+              </div>
+            </div>
+       
+     
+  
+  
+
+  <div class="container col-md-6 mt-0">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="text-center">Withdraw form</h3>
+                
+            </div>
+            <div class="card-body">
+              <form (ngSubmit)="withdraw()">
+          <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input name="acno" [(ngModel)]="acno1" type="text" class="form-control" placeholder="Account number" id="login_account1" required>
+                        
+                    </div>
+
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input name="pswd" [(ngModel)]="pswd1" type="password" class="form-control" placeholder="password" id="login_password1" required>
+                        
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input name="amount" [(ngModel)]="amount1" type="text" class="form-control" placeholder="amount" id="login_amount1" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="submit" value="withdraw" class="btn float-right login_btn " style="width:50%" >
+                    </div>
+                </form>
+            </div>
+            <!-- <p style="color:white;align-items:baseline;">already a user? <a href="./index.html">Login</a></p> -->
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+

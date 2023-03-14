@@ -1,0 +1,14 @@
+table,tr,td,th{
+    color:aliceblue;
+    border:white 2px solid;
+    padding: 10px;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:25px;
+}
+.a1{
+    margin-top:10px;
+    font-size: 25px;
+    font-weight:900;
+}

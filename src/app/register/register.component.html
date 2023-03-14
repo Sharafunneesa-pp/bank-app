@@ -1,0 +1,71 @@
+<!-- As a link -->
+<nav class="navbar navbar-light bg-dark " >
+    <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#169; HAFC Bank Pvt.Ltd </b></a>
+    <span class="quote text-light">Giving you freedom...</span>
+  </nav>
+  
+  
+  <div class="container col-md-12 mt-0">
+      <div class="d-flex justify-content-center h-100">
+          <div class="card">
+              <div class="card-header">
+                  <h3 class="text-center">Sign Up</h3>
+                  
+              </div>
+              <div class="card-body">
+                  <form>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <!-- one way binding -->
+                        <!-- <input (change)="acnoChange($event)" type="text" class="form-control" [placeholder]="account" id="login_accno" required> -->
+
+                        <!-- <input #acno type="text" class="form-control" [placeholder]="account" id="login_accno" required> -->
+                        <!-- two way binding -->
+                        <input  name="uname" [(ngModel)]="uname" type="text" class="form-control" placeholder="Username" id="login_name" required>
+
+                    </div>
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-user"></i></span>
+                          </div>
+                          <!-- one way binding -->
+                          <!-- <input (change)="acnoChange($event)" type="text" class="form-control" [placeholder]="account" id="login_accno" required> -->
+
+                          <!-- <input #acno type="text" class="form-control" [placeholder]="account" id="login_accno" required> -->
+                          <!-- two way binding -->
+                          <input  name="acno" [(ngModel)]="acno" type="text" class="form-control" placeholder="Account" id="login_accno" required>
+
+                      </div>
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-key"></i></span>
+                          </div>
+<!-- two way binding -->
+                          <input name="pswd" [(ngModel)]="pswd" type="password" class="form-control" placeholder="password" id="login_password" required>
+                          <!-- ine way binding -->
+                          <!-- <input #pswd type="password" class="form-control" placeholder="password" id="login_password" required> -->
+
+                          <!-- <input (change)="pswdChange($event)"type="password" class="form-control" placeholder="password" id="login_password" required> -->
+                      </div>
+                      
+                      <div class="form-group">
+                        <!-- two way binding -->
+                        <input (click)="register()" type="submit" value="Register" class="btn float-right login_btn " style="width:50%" >
+<!-- one way binding -->
+                        <!-- <input (click)="login(acno,pswd)" type="submit" value="Login" class="btn float-right login_btn " style="width:50%" > -->
+
+                          <!-- <input (click)="login()" type="submit" value="Login" class="btn float-right login_btn " style="width:50%" > -->
+                      </div>
+                  </form>
+              </div>
+
+
+              <!-- router link can also use in angular -->
+              <p style="color:white;align-items:baseline;">Existing user? <a routerLink = "">Log In</a></p>
+
+              <!-- <p style="color:white;align-items:baseline;">Not a user? <a href="./register.html">Register</a></p> -->
+          </div>
+      </div>
+  </div>
